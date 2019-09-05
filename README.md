@@ -17,7 +17,8 @@ And rendered on the Oculus Quest using the [Quest Godot Plugin](https://github.c
 
 ![Bistro Scene Oculus Quest](doc/images/oculusquest_bistro_screenshot.jpg?raw=true)
 
-You can see the the v0.7 demo on the Oculus Quest in action here:
+A Oculus Quest .apk generated from version 0.7 captures can be downloaded here: [SeuratGodotDemoQuest_v0.7.apk](https://github.com/NeoSpark314/seurat-godot-plugin/releases/download/v0.7/SeuratGodotDemoQuest_v0.7.apk) and
+you can see demo on the Oculus Quest in action here:
 [![v0.7 demo video link](doc/images/intro_youtube_preview.jpg?raw=true)](https://www.youtube.com/watch?v=ikYTkyIMV8k)
 
 
@@ -32,12 +33,12 @@ It was originally announced at Google IO 2017 with an impressive demo in coopera
 In May 2018 the technology was open sourced (https://developers.googleblog.com/2018/05/open-sourcing-seurat.html) and also a paper published on HPG 2018 ([Seurat Paper](https://pharr.org/matt/papers/seurat_hpg_2018.pdf)) that contains the algorithmic details of Seurat.
 
 ## Using the plugin to capture data
-To use the plugin you need to clone the repository and copy the 'addon' folder into the godot project where you want to capture or you can use the included test capture_sample scene.
+To use the plugin you need to clone the repository and copy the `addon` folder into the Godot project where you want to capture. Or you can use the included `capture_sample` scene for testing.
 
 In the rest of the documentation I will be using the Sponza demo scene from Calinou (https://github.com/Calinou/godot-sponza).
 
 ### Enable the plugin
-Goto you Project Settings in the Plugins tab and set the Seurat Godot Plugin to Active.
+Go to your Project Settings in the Plugins tab and set the Seurat Godot Plugin to active.
 
 ![Enable the Plugin](doc/images/pluginsetup_activate.jpg?raw=true)
 
@@ -109,7 +110,7 @@ The imported mesh will then look like this:
 For the texture import make sure to **disable Mip Maps** and that the texture does not get resized.
 ![Texture Import Settings](doc/images/render_texture_import_settings.jpg?raw-true)
 
-Next is to create a shader material for the mesh and assign the provided seurat_blend.shader. This shader exposes a single parameter that is the texture slot:
+Next is to create a shader material for the mesh and assign the provided `seurat_blend.shader`. This shader exposes a single parameter that is the texture slot:
 
 ![Shader Settings](doc/images/render_shader_settings.jpg?raw-true)
 
