@@ -1,9 +1,9 @@
 # Seurat Godot Plugin
 A Godot editor plugin to capture data for the Google Seurat scene simplification technology.
 
-**Version 0.7.0**: this version needs Godot 3.2 to function
+The version in this repo needs Godot 3.2 to function at the time of writing.
 
-It allows to take a complex scene with millions of triangles from Godot and convert it to a limited view volume scene that can be rendered smoothly for example on an Oculus Quest.
+The plugin allows to take a complex scene with millions of triangles from Godot and convert it to a limited view volume scene that can be rendered smoothly for example on an Oculus Quest.
 
 As an example the Amazon Lumberyard Bistro scene (https://developer.nvidia.com/orca/amazon-lumberyard-bistro) where the exterior consists of 2,965,809 triangles
 
@@ -21,6 +21,7 @@ A Oculus Quest .apk generated from version 0.7 captures can be downloaded here: 
 you can see demo on the Oculus Quest in action here:
 [![v0.7 demo video link](doc/images/intro_youtube_preview.jpg?raw=true)](https://www.youtube.com/watch?v=ikYTkyIMV8k)
 
+A second test that uses a capture from the Godot TPS demo can be found here: https://youtu.be/2RgMMeGQi2Q
 
 
 ## What is Google Seurat

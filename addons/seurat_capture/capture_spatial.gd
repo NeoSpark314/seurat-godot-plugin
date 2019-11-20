@@ -17,6 +17,7 @@ export var shadow_atlas_size = 4096;
 export var start_capture : bool = false;
 export var cancel_capture : bool = false;
 
+export var append_nodename_to_path : bool = false;
 #if set to true the output path will get the capture settings appended (good for quality comparisons)
 export var append_settings_to_path : bool = false;
 
@@ -204,6 +205,8 @@ func perform_capture():
 	seurat_manifest_start_capture(seurat_manifest);
 	
 	var path = export_path;
+	if (append_nodename_to_path):
+		path = str(path, "%s" % [name])
 	if (append_settings_to_path):
 		path = str(path, "_n%.1f_f%.0f_res%d_num%d" % [camera_near, camera_far, cube_face_resolution, num_captures])
 	path = str(path, "/");
